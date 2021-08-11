@@ -29,6 +29,7 @@ Follow this link for more detail https://mehrankhandev.medium.com/ultimate-guide
 ```
 
 <img src="/1-ProjectStructure/screenshot/Screenshot_2.png" height="250" />
+<img src="/1-ProjectStructure/screenshot/Screenshot_4.png" height="250" />
 
 ### Step 4 Installing Dependencies
 
