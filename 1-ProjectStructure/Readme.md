@@ -51,6 +51,12 @@ Add these dependencies in your Package.json File and run yarn istall Or npm inst
 
 <img src="/1-ProjectStructure/screenshot/Screenshot_3.png" height="250" />
 
+### Step 5 Done
+
+```sh
+Thats it.
+```
+
 ## Project Overview
 
 ## src folder
