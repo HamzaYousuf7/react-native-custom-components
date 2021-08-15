@@ -3,7 +3,7 @@
 ## Overview
 
 ```sh
-How to create Custom bottom tab bar.
+How to create Custom bottom tab bar. Read the readme for instruction or you can find the complete code in mainStack.js file
 ```
 
 <img src="/2-CustomBottomTabBar/screenshot/Screenshot_1.png" height="250" />
@@ -50,7 +50,7 @@ const Tab = createBottomTabNavigator();
 ```sh
 Create the array and in the array you have an object containing information about the single bottom tab
 1 - ID:
-      So we can pass as a key when we map it.
+      So we can pass as a key when we map the array.
 
 2 - name:
       The name we're going to use when we navigate.
@@ -116,7 +116,7 @@ const bottomTab = [
 ### Step 5 Tab Navigation
 
 ```sh
-The function which is going to return the tab naivation plus tab navigation JSX
+The function which will return the tab naivation plus tab navigation JSX
 ```
 
 ```javascript
@@ -158,77 +158,23 @@ The main thing here is if check that determine if the tab bar is active or not r
           tabBarIcon: ({ focused }) => {
             if (focused == true) {
               return (
-                <>
-                  <View
-                    style={{
-                      width: "80%",
-                      height: "100%",
-
-                      alignItems: "center",
-                    }}
-                  >
-                    <View
-                      style={{
-                        width: "100%",
-                        height: "65%",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                    >
-                      <Image
-                        source={singleItem.acitveIcon}
-                        resizeMode="contain"
-                        style={{ width: "65%", height: "65%" }}
-                      />
-                    </View>
-                    <Text
-                      style={{
-                        fontSize: width * 0.03,
-                        color: "#3BB67B",
-                        marginTop: height * 0.005,
-                      }}
-                    >
-                      {singleItem.barName}
-                    </Text>
-                  </View>
-                </>
+                <View
+                  style={{
+                    width: "80%",
+                    height: "100%",
+                    alignItems: "center",
+                  }}
+                ></View>
               );
             } else if (focused == false) {
               return (
-                <>
-                  <View
-                    style={{
-                      width: "80%",
-                      height: "100%",
-
-                      alignItems: "center",
-                    }}
-                  >
-                    <View
-                      style={{
-                        width: "100%",
-                        height: "65%",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                    >
-                      <Image
-                        source={singleItem.inActiveIcon}
-                        resizeMode="contain"
-                        style={{ width: "65%", height: "65%" }}
-                      />
-                    </View>
-                    <Text
-                      style={{
-                        fontSize: width * 0.03,
-                        color: "#C8C8C8",
-                        marginTop: height * 0.005,
-                      }}
-                    >
-                      {singleItem.barName}
-                    </Text>
-                  </View>
-                </>
+                <View
+                  style={{
+                    width: "80%",
+                    height: "100%",
+                    alignItems: "center",
+                  }}
+                ></View>
               );
             }
           },
