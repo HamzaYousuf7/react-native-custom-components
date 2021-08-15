@@ -11,7 +11,7 @@ How to create Custom bottom tab bar.
 
 ## Steps
 
-### Step 1 install
+### Step 1 Installation
 
 ```sh
 Assuming you have already install other dependencies of Navigation 5 install this
@@ -35,7 +35,7 @@ import Profile from "../screen/Profile";
 import More from "../screen/More";
 ```
 
-### Step 3 initialize
+### Step 3 Initialization
 
 ```sh
 initialize createBottomTabNavigator
@@ -49,22 +49,33 @@ const Tab = createBottomTabNavigator();
 
 ```sh
 Create the array and in the array you have an object containing information about the single bottom tab
-1 - ID so we can pass as a key when we map it.
-2 - name the name we're going to use when we navigate
-3 - comonent pass the screen name which you import above
-4 - active icon mean when you'r on that tab
-5 - inActiveIcon: mean when your not on that tab
+1 - ID:
+      So we can pass as a key when we map it.
+
+2 - name:
+      The name we're going to use when we navigate.
+3 - barName:
+      The name which is going to display on the screen
+
+4 - components:
+       Pass the screen name which you import above.
+
+5 - active:
+      Icon mean when you'r on that tab
+
+6 - inActiveIcon:
+      Mean when your not on that tab
 ```
 
 ```javascript
 const bottomTab = [
   {
     id: 1,
-    name: "RoutesScreen", // - 1 The routes name
-    barName: "ROUTES", //2 -  tab Name
-    component: RoutesScreen, //  3 - actual component
-    acitveIcon: icons.routesActive, // 4 - active icon
-    inActiveIcon: icons.routesInActive, // 4 - inactive icon
+    name: "RoutesScreen",
+    barName: "ROUTES",
+    component: RoutesScreen,
+    acitveIcon: icons.routesActive, // 1 - 4  icon
+    inActiveIcon: icons.routesInActive, // 1 - 5  icon
   },
   {
     id: 2,
@@ -73,6 +84,30 @@ const bottomTab = [
     component: History,
     acitveIcon: icons.historyActive,
     inActiveIcon: icons.historyInActive,
+  },
+  {
+    id: 3,
+    name: "Home",
+    barName: "OFFLINE",
+    component: Home,
+    acitveIcon: icons.locationActive,
+    inActiveIcon: icons.locationInActive,
+  },
+  {
+    id: 2,
+    name: "Profile",
+    barName: "PROFILE",
+    component: Profile,
+    acitveIcon: icons.userActive,
+    inActiveIcon: icons.userInActive,
+  },
+  {
+    id: 2,
+    name: "More",
+    barName: "MORE",
+    component: More,
+    acitveIcon: icons.moreActive,
+    inActiveIcon: icons.moreInActive,
   },
 ];
 ```
