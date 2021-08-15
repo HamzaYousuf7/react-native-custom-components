@@ -54,6 +54,7 @@ Create the array and in the array you have an object containing information abou
 
 2 - name:
       The name we're going to use when we navigate.
+
 3 - barName:
       The name which is going to display on the screen
 
@@ -110,4 +111,132 @@ const bottomTab = [
     inActiveIcon: icons.moreInActive,
   },
 ];
+```
+
+### Step 5 Tab Navigation
+
+```sh
+The function which is going to return the tab naivation plus tab navigation JSX
+```
+
+```javascript
+const BottomTabJSX = () => (
+  <Tab.Navigator
+    initialRouteName="Home"
+    tabBarOptions={{
+      style: {
+        backgroundColor: "white",
+        height: height * 0.1,
+        justifyContent: "center",
+        alignItems: "center",
+      },
+    }}
+  >
+    // JSX CODE TO BE ADDED
+  </Tab.Navigator>
+);
+```
+
+### Step 6 added the bottom tab JSX according to your design
+
+```sh
+The function which is going to return the tab naivation plus tab navigation JSX
+```
+
+```javascript
+// /* bottom tab arr */
+
+{
+  bottomTab.map((singleItem) => {
+    return (
+      <Tab.Screen
+        name={singleItem.name}
+        component={singleItem.component}
+        key={singleItem.id}
+        options={{
+          tabBarLabel: "",
+          tabBarIcon: ({ focused }) => {
+            if (focused == true) {
+              return (
+                <>
+                  <View
+                    style={{
+                      width: "80%",
+                      height: "100%",
+
+                      alignItems: "center",
+                    }}
+                  >
+                    <View
+                      style={{
+                        width: "100%",
+                        height: "65%",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Image
+                        source={singleItem.acitveIcon}
+                        resizeMode="contain"
+                        style={{ width: "65%", height: "65%" }}
+                      />
+                    </View>
+                    <Text
+                      style={{
+                        fontSize: width * 0.03,
+                        color: "#3BB67B",
+                        marginTop: height * 0.005,
+                      }}
+                    >
+                      {singleItem.barName}
+                    </Text>
+                  </View>
+                </>
+              );
+            } else if (focused == false) {
+              return (
+                <>
+                  <View
+                    style={{
+                      width: "80%",
+                      height: "100%",
+
+                      alignItems: "center",
+                    }}
+                  >
+                    <View
+                      style={{
+                        width: "100%",
+                        height: "65%",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Image
+                        source={singleItem.inActiveIcon}
+                        resizeMode="contain"
+                        style={{ width: "65%", height: "65%" }}
+                      />
+                    </View>
+                    <Text
+                      style={{
+                        fontSize: width * 0.03,
+                        color: "#C8C8C8",
+                        marginTop: height * 0.005,
+                      }}
+                    >
+                      {singleItem.barName}
+                    </Text>
+                  </View>
+                </>
+              );
+            }
+          },
+        }}
+      />
+    );
+  });
+}
+
+// /* bottom tab arr end */
 ```
