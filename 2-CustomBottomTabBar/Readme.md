@@ -3,6 +3,8 @@
 ## Overview
 
 How to create Custom bottom tab bar.
+<img src="/2-CustomBottomTabBar/screenshot/Screenshot_1.png" height="250" />
+<img src="/2-CustomBottomTabBar/screenshot/Screenshot_2.png" height="250" />
 
 ## Steps
 
