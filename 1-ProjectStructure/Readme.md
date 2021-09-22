@@ -2,27 +2,27 @@
 
 ## Overview
 
-In this folder Structure I have already setup axios, navigation 5, stack navigation, redux, redux thunk and redux persist with asyncStorage and some best practice files for color images import and much more.
+In this folder Structure I have already setup axios, navigation 5, stack navigation, redux, redux thunk and redux persist with asyncStorage and follow best practices.
 
 ## Setup
 
 ### Step 1 Copy Src file
 
-```sh
-First copy the src  folder into your root directory as shown below
+```bash
+First copy the src  folder into the project root directory as shown below
 ```
 
 <img src="/1-ProjectStructure/screenshot/Screenshot_1.png" height="250" />
 
 ### Step 2 Replace App.js File
 
-```sh
-Replace your app.js file with the given app.js file
+```bash
+Replace your app.js file with the above given app.js file
 ```
 
-### Step 3 Font
+### Step 3 Setup Font
 
-```sh
+```bash
 Add react-native.config.js file at the root of your project
 npx react-native link Run this command for linking in CMD
 Follow this link for more detail https://mehrankhandev.medium.com/ultimate-guide-to-use-custom-fonts-in-react-native-77fcdf859cf4
@@ -33,7 +33,7 @@ Follow this link for more detail https://mehrankhandev.medium.com/ultimate-guide
 
 ### Step 4 Installing Dependencies
 
-```sh
+```bash
 Add these dependencies in your Package.json File and run yarn istall Or npm install
     "@react-native-async-storage/async-storage": "^1.15.5",
     "@react-native-community/masked-view": "^0.1.11",
@@ -54,7 +54,7 @@ Add these dependencies in your Package.json File and run yarn istall Or npm inst
 
 ### Step 5 Done
 
-```sh
+```bash
 Thats it.
 ```
 
@@ -62,25 +62,25 @@ Thats it.
 
 ## src folder
 
-```sh
+```bash
 Contain the whole app
 ```
 
 ## assets
 
-```sh
+```bash
 Here we're going to store images, icons and fonts
 ```
 
 ## components
 
-```sh
+```bash
 Here we're going to store all the components, Like Header, Input ..etc
 ```
 
 ## constant
 
-```sh
+```bash
 Here we're going to store all the constant things of our application. Meaning those things which do not get change often
 
 apiEndPoints: all the endpoint of our application
@@ -90,7 +90,7 @@ color: color scheme of the application
 
 ## navigation
 
-```sh
+```bash
 Contain two files
 
 AuthSack: all the auth screen goes here. Example Login, Sign Up, Forget Password
@@ -99,13 +99,13 @@ MainStack: all the other screen goes here (when the user is login in)
 
 ## screen
 
-```sh
+```bash
 All the screen goes here
 ```
 
 ## store
 
-```sh
+```bash
 redux setup
 
 action: action creator
@@ -116,19 +116,19 @@ store: setup of reducer.
 
 ## utils
 
-```sh
+```bash
 All the additional files goes here
 ```
 
 ## index
 
-```sh
+```bash
 We have set up our navigation in this files so all the data store in the redux is available here and we can write any logic if we want.
 Example show different Stack depening upon if the user is login or not
 ```
 
 ## Appp.js Root
 
-```sh
+```bash
 Entry files and setup redux here
 ```
