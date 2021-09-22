@@ -22,8 +22,9 @@ Replace your app.js file with the above given app.js file
 
 ### Step 3 Setup Font
 
-- First add react-native.config.js file at the root of your project. (As shown in Image below)
-- Now run this command on CMD. This will link your fonts. (As shown in Image below)
+- First add react-native.config.js file at the root of your project. **(As shown in Image below)**
+- Now run this command on CMD. This will link your fonts. **(As shown in Image below)**
+- You can follow this article for more information: https://mehrankhandev.medium.com/ultimate-guide-to-use-custom-fonts-in-react-native-77fcdf859cf4
 
 ```bash
 npx react-native link
@@ -32,12 +33,9 @@ npx react-native link
 <img src="/1-ProjectStructure/screenshot/Screenshot_2.png" height="250" />
 <img src="/1-ProjectStructure/screenshot/Screenshot_4.png" height="250" />
 
-You can follow this article for more information:
-https://mehrankhandev.medium.com/ultimate-guide-to-use-custom-fonts-in-react-native-77fcdf859cf4
-
 ### Step 4 Installing Dependencies
 
-Add these dependencies in your Package.json File and run yarn istall Or npm install. (As shown in Image below)
+Add these dependencies in your Package.json File and run yarn istall Or npm install. **(As shown in Image below)**
 
 ```bash
 
