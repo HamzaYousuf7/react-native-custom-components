@@ -2,9 +2,9 @@
 
 ## Overview
 
-```sh
-How to create Custom bottom tab bar. Read the readme for instruction or you can find the complete code in mainStack.js file
-```
+How to create Custom bottom tab bar. Read the readme for instruction or you can find the complete code in the provided mainStack.js file **(ABOVE)**
+
+## Resukt
 
 <img src="/2-CustomBottomTabBar/screenshot/Screenshot_1.png" height="250" />
 <img src="/2-CustomBottomTabBar/screenshot/Screenshot_2.png" height="250" />
@@ -13,16 +13,15 @@ How to create Custom bottom tab bar. Read the readme for instruction or you can 
 
 ### Step 1 Installation
 
-```sh
-Assuming you have already install other dependencies of Navigation 5 install this
+**Assuming you have already install other dependencies of Navigation 5 install this**
+
+```bash
 yarn add @react-navigation/bottom-tabs@^5.x
 ```
 
 ### Step 2 imports
 
-```sh
 import createBottomTabNavigator and all the screens of your bottom tab
-```
 
 ```javascript
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
@@ -37,9 +36,7 @@ import More from "../screen/More";
 
 ### Step 3 Initialization
 
-```sh
-initialize createBottomTabNavigator
-```
+**initialize createBottomTabNavigator**
 
 ```javascript
 const Tab = createBottomTabNavigator();
@@ -47,26 +44,24 @@ const Tab = createBottomTabNavigator();
 
 ### Step 4 create the array
 
-```sh
 Create the array and in the array you have an object containing information about the single bottom tab
-1 - ID:
-      So we can pass as a key when we map the array.
 
-2 - name:
-      The name we're going to use when we navigate.
+- 1 - ID:
+  So we can pass as a key when we map the array.
 
-3 - barName:
-      The name which is going to display on the screen
+- 2 - name:
+  The name we're going to use when we navigate.
 
-4 - components:
-       Pass the screen name which you import above.
+- 3 - barName:
+  The name which is going to display on the screen
 
-5 - active:
-      Icon mean when you'r on that tab
+- 4 - components:
+  Pass the screen name which you import above.
 
-6 - inActiveIcon:
-      Mean when your not on that tab
-```
+- 5 - active:
+  Icon mean when you'r on that tab
+
+- 6 - inActiveIcon:
 
 ```javascript
 const bottomTab = [
@@ -115,9 +110,7 @@ const bottomTab = [
 
 ### Step 5 Tab Navigation
 
-```sh
 The function which will return the tab naivation plus tab navigation JSX
-```
 
 ```javascript
 const BottomTabJSX = () => (
@@ -139,9 +132,7 @@ const BottomTabJSX = () => (
 
 ### Step 6 added the bottom tab JSX according to your design
 
-```sh
 The main thing here is if check that determine if the tab bar is active or not return the design accordingly
-```
 
 ```javascript
 // /* bottom tab arr */
@@ -189,9 +180,7 @@ The main thing here is if check that determine if the tab bar is active or not r
 
 ### Step 7 complete code
 
-```sh
-Complete code
-```
+**Complete code**
 
 ```javascript
 const BottomTabJSX = () => (
@@ -307,9 +296,7 @@ const BottomTabJSX = () => (
 
 ### Step 8 Add tab bar into main stack
 
-```sh
-Now add your bottom tab bar code into your main stack or whatever your navigation structure is and you're done
-```
+**Now add your bottom tab bar code into your main stack or whatever your navigation structure is and you're done**
 
 ```javascript
 const MainStack = () => {
