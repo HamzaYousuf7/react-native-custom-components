@@ -22,8 +22,8 @@ Replace your app.js file with the above given app.js file
 
 ### Step 3 Setup Font
 
-First add react-native.config.js file at the root of your project. (As shown in Image below)
-Now run this command on CMD. This will link your fonts. (As shown in Image below)
+- First add react-native.config.js file at the root of your project. (As shown in Image below)
+- Now run this command on CMD. This will link your fonts. (As shown in Image below)
 
 ```bash
 npx react-native link
@@ -82,16 +82,16 @@ Here we're going to store all the components, Like Header, Input ..etc
 
 Here we're going to store all the constant things of our application. Meaning those things which do not get change often
 
-apiEndPoints: all the endpoint of our application
-assets: Import Both Images and Icons in this file and then use this file in the whole application.
-color: color scheme of the application
+- apiEndPoints: all the endpoint of our application
+- assets: Import Both Images and Icons in this file and then use this file in the whole application.
+- color: color scheme of the application
 
 ## navigation
 
 Contain two files
 
-AuthSack: all the auth screen goes here. Example Login, Sign Up, Forget Password
-MainStack: all the other screen goes here (when the user is login in)
+- AuthSack: all the auth screen goes here. Example Login, Sign Up, Forget Password
+- MainStack: all the other screen goes here (when the user is login in)
 
 ## screen
 
@@ -101,10 +101,10 @@ All the screen goes here
 
 redux setup
 
-action: action creator
-reducer: reducer
-actionType: store all the action type here
-store: setup of reducer.
+- action: action creator
+- reducer: reducer
+- actionType: store all the action type here
+- store: setup of reducer.
 
 ## utils
 
