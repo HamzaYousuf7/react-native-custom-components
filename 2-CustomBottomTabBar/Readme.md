@@ -4,7 +4,7 @@
 
 How to create Custom bottom tab bar. Read the readme for instruction or you can find the complete code in the provided mainStack.js file **(ABOVE)**
 
-## Resukt
+## Result
 
 <img src="/2-CustomBottomTabBar/screenshot/Screenshot_1.png" height="250" />
 <img src="/2-CustomBottomTabBar/screenshot/Screenshot_2.png" height="250" />
